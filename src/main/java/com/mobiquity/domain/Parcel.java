@@ -1,17 +1,15 @@
 package com.mobiquity.domain;
 
-import java.util.List;
-
-public class Package {
+public class Parcel {
     Integer weightLimit;
 /*
     List<Item> items;
 */
 
-    public Package() {
+    public Parcel() {
     }
 
-    public Package(Integer weightLimit) {
+    public Parcel(Integer weightLimit) {
         this.weightLimit = weightLimit;
     }
 
