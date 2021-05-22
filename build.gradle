@@ -12,6 +12,13 @@ repositories {
   mavenCentral()
 }
 
+dependencies {
+  implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+  testImplementation(platform('org.junit:junit-bom:5.7.0'))
+  testImplementation('org.junit.jupiter:junit-jupiter')
+}
+
+
 publishing {
   publications {
     maven(MavenPublication) {
