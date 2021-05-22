@@ -7,3 +7,6 @@
 /bin/**
 .classpath
 .project
+/.idea/gradle.xml
+/.idea/misc.xml
+/target/
