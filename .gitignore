@@ -1,0 +1,9 @@
+/build/**
+/.idea/**
+/.gradle/**
+/logs
+/LOGS_IS_UNDEFINED
+/lsp/**
+/bin/**
+.classpath
+.project
