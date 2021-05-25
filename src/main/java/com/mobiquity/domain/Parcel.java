@@ -1,25 +1,30 @@
 package com.mobiquity.domain;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Parcel {
-    Integer weightLimit;
-/*
-    List<Item> items;
-*/
+    Double weightLimit;
+    Set<Item> items;
 
-    public Parcel() {
-    }
-
-    public Parcel(Integer weightLimit) {
+    public Parcel(Double weightLimit) {
         this.weightLimit = weightLimit;
+        this.items = new HashSet<>();
     }
 
-    public Integer getWeightLimit() {
+    public Double getWeightLimit() {
         return weightLimit;
     }
 
-    public void setWeightLimit(Integer weightLimit) {
+    public void setWeightLimit(Double weightLimit) {
         this.weightLimit = weightLimit;
     }
 
+    public Set<Item> getItems() {
+        return items;
+    }
 
+    public void setItems(Set<Item> items) {
+        this.items = items;
+    }
 }

@@ -3,9 +3,9 @@ package com.mobiquity.service;
 import com.mobiquity.domain.Item;
 import com.mobiquity.domain.Parcel;
 
-import java.util.List;
+import java.util.Set;
 
 public interface DecisionMakerAlgorithm {
 
-    String pickOptimumItems(Parcel parcel, List<Item> items);
+    Parcel pickOptimumItems(Parcel parcel, Set<Item> items);
 }
