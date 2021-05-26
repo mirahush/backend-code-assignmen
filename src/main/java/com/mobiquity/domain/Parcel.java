@@ -3,10 +3,11 @@ package com.mobiquity.domain;
 import java.util.HashSet;
 import java.util.Set;
 
-
+/**
+ *      I have used set to store items as the order did not
+ *      matter in this case and also duplicate items were not allowed
+ * */
 public class Parcel {
-    /*NOTE : I have used set to store items as the order did not
-    * matter in this case and also duplicate items were not allowed */
     Double weightLimit;
     Set<Item> items;
 
