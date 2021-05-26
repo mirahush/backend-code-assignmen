@@ -1,5 +1,8 @@
 package com.mobiquity.domain;
 
+/**
+ * This class
+ */
 public class Item {
     Integer index;
     Double weight;

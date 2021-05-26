@@ -25,7 +25,7 @@ public class FileAccessServiceTest {
     @DisplayName("TARGET: read file " +
             "WHEN: file does exists in resources " +
             "EXPECTATION: buffered reader is not null")
-    public void test1(){
+    public void readFile_0(){
         BufferedReader bufferedReader = fileAccessService.readFile(CORRECT_FILE_NAME);
 
         assertNotNull(bufferedReader);
@@ -35,7 +35,7 @@ public class FileAccessServiceTest {
     @DisplayName("TARGET: read file " +
             "WHEN: file does NOT exists in resources" +
             "EXPECTATION: exception is thrown")
-    public void test2(){
+    public void readFile_1(){
         assertThrows(NullPointerException.class, () -> fileAccessService.readFile(WRONG_FILE_NAME));
     }
 }

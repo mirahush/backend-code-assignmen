@@ -1,6 +1,6 @@
 package com.mobiquity.exception;
 
-public class APIException extends RuntimeException {
+public class APIException extends Exception{
 
   public APIException(String message, Exception e) {
     super(message, e);

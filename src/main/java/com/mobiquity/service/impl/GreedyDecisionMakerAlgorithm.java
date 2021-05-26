@@ -7,11 +7,15 @@ import com.mobiquity.service.DecisionMakerAlgorithm;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ *      The first solution that I developed was using greedy algorithm
+ *      and I tried to sort the items based on their ratio of cost to weight.
+ *      Yet this algorithm did not produced the optimum value for the 3rd test
+ *      case.
+ */
+
 public class GreedyDecisionMakerAlgorithm implements DecisionMakerAlgorithm {
-    /*NOTE : The first solution that I developed was using greedy algorithm
-     and I tried to sort the items based on their ratio of cost to weight.
-     Yet this algorithm did not produced the optimum value for the 3rd test
-     case. */
+
     @Override
     public Parcel pickOptimumItems(Parcel parcel, Set<Item> items) {
         Set<Item> pickedItems = new HashSet<>();
